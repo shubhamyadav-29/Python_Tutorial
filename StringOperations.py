@@ -38,3 +38,5 @@ original = "Hello"
 # original[0] = 'J'   # This will cause an error
 new_string = "J" + original[1:]  #  Correct way
 print("\n\nAfter modifying:", new_string)
+
+

@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Hello, Python!
+=======
+Hello, Python!
+>>>>>>> b59cf522c424fbf6a2d18df329f6d34c6480da25

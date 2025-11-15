@@ -1,7 +1,13 @@
-import pymysql as mq
 
-# Server Name -> localhost
-#Username-> root 
-#Password -> ';'
-myobj = mq.connect("localhost","root","")
-cursorobj=myobj.cursor()
+
+import mysql.connector
+
+mydb = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="",       # XAMPP default: empty password
+      # optional
+)
+
+print("Connected:", mydb.is_connected())
+

@@ -1,5 +1,3 @@
-
-
 import mysql.connector
 
 mydb = mysql.connector.connect(
@@ -10,4 +8,9 @@ mydb = mysql.connector.connect(
 )
 
 print("Connected:", mydb.is_connected())
+
+cursor = mydb.cursor()
+
+cursor.execute("CREATE DATABASE IF NOT EXISTS school")
+print("Database created successfully.")
 

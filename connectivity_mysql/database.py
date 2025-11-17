@@ -1,16 +1,12 @@
 import mysql.connector
 
-mydb = mysql.connector.connect(
-    host="localhost",
+db = mysql.connector.connect(
     user="root",
-    password="",       # XAMPP default: empty password
-      # optional
+    host="localhost",
+    password=""
 )
 
-print("Connected:", mydb.is_connected())
+cursor=db.cursor()
 
-cursor = mydb.cursor()
-
-cursor.execute("CREATE DATABASE IF NOT EXISTS school")
-print("Database created successfully.")
-
+cursor.execute("CREATE DATABASE  IF NOT EXISTS shubham")
+print("Database create successfully")
